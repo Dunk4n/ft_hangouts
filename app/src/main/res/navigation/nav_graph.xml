@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.ft_hangouts.FirstFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_FirstFragment_to_createNewContactFragment"
+            app:destination="@id/createNewContactFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_FirstFragment_to_contactDisplay"
+            app:destination="@id/contactDisplay"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_FirstFragment_to_messageFragment"
+            app:destination="@id/messageFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.ft_hangouts.settingFragment"
+        android:label="@string/setting_label"
+        tools:layout="@layout/fragment_setting" />
+    <action
+        android:id="@+id/action_global_settingFragment"
+        app:destination="@id/settingFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
+    <fragment
+        android:id="@+id/createNewContactFragment"
+        android:name="com.example.ft_hangouts.CreateNewContactFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_create_new_contact" >
+        <action
+            android:id="@+id/action_createNewContactFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactDisplay"
+        android:name="com.example.ft_hangouts.contactDisplay"
+        android:label="Display contact"
+        tools:layout="@layout/fragment_contact_display" >
+        <action
+            android:id="@+id/action_contactDisplay_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_contactDisplay_to_editContactFragment"
+            app:destination="@id/editContactFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_contactDisplay_to_messageFragment"
+            app:destination="@id/messageFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/editContactFragment"
+        android:name="com.example.ft_hangouts.EditContactFragment"
+        android:label="Edit contact" >
+        <action
+            android:id="@+id/action_editContactFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.ft_hangouts.MessageFragment"
+        android:label="Message"
+        tools:layout="@layout/fragment_message" />
+</navigation>

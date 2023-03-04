@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Ajustes</string>
+    <string name="previous">Previo</string>
+    <string name="random_heading">Aquí hay un número aleatorio entre 0 y %d.</string>
+    <string name="random_button_text">Aleatorio</string>
+    <string name="toast_button_text">Tostada</string>
+    <string name="count_button_text">Contar</string>
+    <string name="setting_text">Elige un tema</string>
+    <string name="setting_label">Ajustes</string>
+    <string name="add_new_contact">añadir nuevo contacto</string>
+    <string name="phone">teléfono</string>
+    <string name="email">email</string>
+    <string name="firstname_label">nombre de pila:</string>
+    <string name="lastname_label">apellido:</string>
+    <string name="phone_number_label">número de teléfono:</string>
+    <string name="email_label">Email:</string>
+    <string name="address_label">Direccion:</string>
+    <string name="birthday_label">Cumpleaños:</string>
+    <string name="notes_label">Notas:</string>
+    <string name="missing_phone_number">Número de teléfono faltante</string>
+    <string name="contactImage">imagen de contacto</string>
+    <string name="edit_contact">editar contacto</string>
+    <string name="delete_contact">borrar contacto</string>
+    <string name="call_contact">llamar contacto</string>
+    <string name="see_contact_message">ver mensaje de contacto</string>
+    <string name="can_not_delete_contact">No se puede eliminar contacto</string>
+    <string name="warning_contact_delete_title">Borrar</string>
+    <string name="warning_contact_delete">¿Está seguro de que desea eliminar este contacto?</string>
+    <string name="no_sms_permission">No tengo permiso de SMS</string>
+    <string name="message_empty">Mensaje vacío</string>
+    <string name="no_sms_receive_permission">No tengo permiso para recibir sms</string>
+</resources>

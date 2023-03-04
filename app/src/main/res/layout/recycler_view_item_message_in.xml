@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical|center"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_alignParentLeft="true">
+
+    <TextView
+        android:id="@+id/txtMessageContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/corner_radius_in"
+        android:elevation="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Msg IN aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        tools:targetApi="lollipop"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/txtMessageDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_weight="3"
+        android:gravity="start"
+        android:text="26/02/2023 11:22:33"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info" />
+
+</LinearLayout>

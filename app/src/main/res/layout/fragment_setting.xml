@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".settingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setting_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/setting_text"
+            android:textColor="@android:color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting_text">
+
+            <RadioButton
+                android:id="@+id/radioButton_default"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/buttonBackground"
+                android:text="@string/Theme_Ft_hangouts_name"
+                android:textAlignment="viewStart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="448dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_Alliance"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorAlliance"
+                android:text="@string/Theme_Alliance_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="448dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_Federation"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorFederation"
+                android:text="@string/Theme_Federation_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="448dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_Order"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorOrder"
+                android:text="@string/Theme_Order_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="448dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton_42"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/color42"
+                android:text="@string/Theme_42_name"
+                android:textColor="#DCD6D6"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="155dp"
+                tools:layout_editor_absoluteY="448dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+</ScrollView>

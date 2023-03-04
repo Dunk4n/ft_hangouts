@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">ft_hangouts</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">0</string>
+    <string name="random_heading">Here is a random number between 0 and %d.</string>
+    <string name="random_button_text">Random</string>
+    <string name="toast_button_text">Toast</string>
+    <string name="count_button_text">Count</string>
+    <string name="setting_text">Choose a theme</string>
+    <string name="setting_label">Settings</string>
+
+    <string name="Theme_Ft_hangouts_name" translatable="false">Default</string>
+    <string name="Theme_Alliance_name" translatable="false">Alliance</string>
+    <string name="Theme_Federation_name" translatable="false">Federation</string>
+    <string name="Theme_Order_name" translatable="false">Order</string>
+    <string name="Theme_42_name" translatable="false">42</string>
+    <string name="add_new_contact">add new contact</string>
+
+    <string name="phone">phone</string>
+    <string name="email">email</string>
+
+    <string name="firstname_label">Firstname:</string>
+    <string name="lastname_label">Lastname:</string>
+    <string name="phone_number_label">Phone number:</string>
+    <string name="email_label">Email:</string>
+    <string name="address_label">Address:</string>
+    <string name="birthday_label">Birthday:</string>
+    <string name="notes_label">Notes:</string>
+    <string name="missing_phone_number">Missing phone number</string>
+    <string name="contactImage">contact image</string>
+    <string name="edit_contact">edit contact</string>
+    <string name="delete_contact">delete contact</string>
+    <string name="call_contact">call contact</string>
+    <string name="see_contact_message">see contact message</string>
+    <string name="can_not_delete_contact">Can not delete contact</string>
+    <string name="warning_contact_delete_title">Delete</string>
+    <string name="warning_contact_delete">Are you sure you want to delete this contact?</string>
+    <string name="no_sms_permission">Do not have SMS permission</string>
+    <string name="message_empty">message empty</string>
+    <string name="no_sms_receive_permission">Do not have the sms receive permission</string>
+</resources>

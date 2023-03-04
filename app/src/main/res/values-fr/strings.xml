@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">paramètres</string>
+    <string name="previous">précédent</string>
+    <string name="random_heading">Voici un nombre aléatoire entre 0 et %d.</string>
+    <string name="random_button_text">aléatoire</string>
+    <string name="toast_button_text">griller</string>
+    <string name="count_button_text">compter</string>
+    <string name="setting_text">Choisissez un thème</string>
+    <string name="setting_label">paramètres</string>
+    <string name="add_new_contact">ajouter un nouveau contact</string>
+    <string name="phone">téléphone</string>
+    <string name="email">email</string>
+    <string name="firstname_label">prénom:</string>
+    <string name="lastname_label">nom de famille:</string>
+    <string name="phone_number_label">numéro de téléphone:</string>
+    <string name="email_label">Email:</string>
+    <string name="address_label">Adresse:</string>
+    <string name="birthday_label">Anniversaire:</string>
+    <string name="notes_label">Remarques:</string>
+    <string name="missing_phone_number">Numéro de téléphone manquant</string>
+    <string name="contactImage">image de contact</string>
+    <string name="edit_contact">Modifier le contact</string>
+    <string name="delete_contact">effacer le contact</string>
+    <string name="call_contact">appeler le contact</string>
+    <string name="see_contact_message">voir le message de contact</string>
+    <string name="can_not_delete_contact">Impossible de supprimer le contact</string>
+    <string name="warning_contact_delete_title">Supprimer</string>
+    <string name="warning_contact_delete">Voulez-vous vraiment supprimer ce contact ?</string>
+    <string name="no_sms_permission">autorisation SMS manquante</string>
+    <string name="message_empty">message vide</string>
+    <string name="no_sms_receive_permission">autorisation de réception de SMS manquante</string>
+</resources>
