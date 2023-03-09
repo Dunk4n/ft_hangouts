@@ -2,24 +2,20 @@ package com.example.ft_hangouts;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.widget.LinearLayout;
 
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.ft_hangouts.databinding.FragmentFirstBinding;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class FirstFragment extends Fragment
 {
@@ -46,8 +42,6 @@ public class FirstFragment extends Fragment
             }
         });
 
-        loadContacts();
-
         return binding.getRoot();
     }
 
@@ -63,24 +57,55 @@ public class FirstFragment extends Fragment
         binding = null;
     }
 
-    public void loadContacts()
+    @Override
+    public void onPause()
     {
         FragmentManager fm = getFragmentManager();
         if(fm == null)
-            return;
-
-        DBHelper db = new DBHelper(getContext());
-        ArrayList<Contact> contacts = db.getAllContacts();
-        db.close();
-        if(contacts == null || contacts.isEmpty() == true || contacts.size() == 0)
             return;
 
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         if(fragmentTransaction == null)
             return;
 
-        ContactsPreviewFragment contactsPreviewFragment = new ContactsPreviewFragment(contacts);
-        fragmentTransaction.replace(R.id.ScrollViewContacts, contactsPreviewFragment, "CONTACTS_PREVIEW");
+        Fragment frag = fm.findFragmentById(R.id.ScrollViewContacts);
+        if(frag != null)
+            fragmentTransaction.remove(frag);
+
+        fragmentTransaction.commit();
+
+        super.onPause();
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        loadContacts();
+    }
+
+
+    public void loadContacts()
+    {
+        FragmentManager fm = getFragmentManager();
+        if(fm == null)
+            return;
+
+        if(fm.findFragmentById(R.id.ScrollViewContacts) != null)
+            return;
+
+        DBHelper db = new DBHelper(getContext());
+        ArrayList<Contact> contacts = db.getAllContacts();
+        db.close();
+        if(contacts == null || contacts.isEmpty() == true || contacts.size() <= 0)
+            return;
+
+        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        if(fragmentTransaction == null)
+            return;
+
+        fragmentTransaction.replace(R.id.ScrollViewContacts, new ContactsPreviewFragment(contacts));
         fragmentTransaction.commit();
     }
 }

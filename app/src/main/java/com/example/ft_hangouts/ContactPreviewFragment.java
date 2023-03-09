@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +31,6 @@ public class ContactPreviewFragment extends Fragment
         // Required empty public constructor
     }
 
-    @SuppressLint("ValidFragment")
     public ContactPreviewFragment(Contact contact)
     {
         this.contact = contact;
@@ -53,6 +53,7 @@ public class ContactPreviewFragment extends Fragment
     {
         binding = FragmentContactPreviewBinding.inflate(inflater, container, false);
 
+        Log.d("AAAA", "contact --");
         if(this.contact != null)
         {
             if(this.contact.getFirstname().isEmpty() == false)
@@ -106,7 +107,6 @@ public class ContactPreviewFragment extends Fragment
             }
         });
 
-                // Inflate the layout for this fragment
         return binding.getRoot();
     }
 
