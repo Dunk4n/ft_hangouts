@@ -115,7 +115,7 @@ public class EditContactFragment extends Fragment
 
                 DBHelper db = new DBHelper(getContext());
 
-                if(contact.getPhoneNumber().equals(binding.inputPhoneNumber.getText().toString()))
+                if(!contact.getPhoneNumber().equals(binding.inputPhoneNumber.getText().toString()))
                     db.deleteMessagesWithPhoneNumber(contact.getPhoneNumber());
 
                 contact.setPhoneNumber(binding.inputPhoneNumber.getText().toString());
