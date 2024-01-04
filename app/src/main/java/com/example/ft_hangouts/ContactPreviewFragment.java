@@ -53,7 +53,6 @@ public class ContactPreviewFragment extends Fragment
     {
         binding = FragmentContactPreviewBinding.inflate(inflater, container, false);
 
-        Log.d("AAAA", "contact --");
         if(this.contact != null)
         {
             if(this.contact.getFirstname().isEmpty() == false)

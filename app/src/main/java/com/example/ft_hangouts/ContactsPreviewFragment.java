@@ -86,7 +86,6 @@ public class ContactsPreviewFragment extends Fragment
         if(fragmentTransaction == null)
             return;
 
-        Log.d("AAAA", "Contacts =======");
         ContactPreviewFragment contactPreviewFragment;
 
         int cnt = 0;
