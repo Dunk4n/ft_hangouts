@@ -12,11 +12,15 @@ import java.util.List;
 public class MessageAdapter extends RecyclerView.Adapter<MessageViewHolder>
 {
     List<Message> messages;
+    String number;
 
-    public MessageAdapter(List<Message> messages)
+    public MessageAdapter(List<Message> messages, String number)
     {
         this.messages = messages;
+        this.number = number;
     }
+
+    public String getNumber() { return (this.number); }
 
     @NonNull
     @Override

@@ -80,7 +80,10 @@ public class CreateNewContactFragment extends Fragment
             String birthday = day + "/" + month + "/" + String.valueOf(binding.inputBirthday.getYear());
 
             DBHelper db = new DBHelper(getContext());
-            long id = db.insertContact(binding.inputPhoneNumber.getText().toString(), binding.inputFirstname.getText().toString(), binding.inputLastname.getText().toString(), binding.inputEmail.getText().toString(), binding.inputAddress.getText().toString(), DBHelper.stringContactToDate(birthday), binding.inputNotes.getText().toString(), "");
+            String phone_number = binding.inputPhoneNumber.getText().toString();
+            if (phone_number.charAt(0) == '0')
+                phone_number = "+33" + phone_number.substring(1);
+            long id = db.insertContact(phone_number, binding.inputFirstname.getText().toString(), binding.inputLastname.getText().toString(), binding.inputEmail.getText().toString(), binding.inputAddress.getText().toString(), DBHelper.stringContactToDate(birthday), binding.inputNotes.getText().toString(), "");
             if(id < 0)
             {
                 db.close();

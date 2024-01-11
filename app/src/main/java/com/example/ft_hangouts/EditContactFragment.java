@@ -119,7 +119,10 @@ public class EditContactFragment extends Fragment
                 if(!contact.getPhoneNumber().equals(binding.inputPhoneNumber.getText().toString()))
                     db.deleteMessagesWithPhoneNumber(contact.getPhoneNumber());
 
-                contact.setPhoneNumber(binding.inputPhoneNumber.getText().toString());
+                String phone_number = binding.inputPhoneNumber.getText().toString();
+                if (phone_number.charAt(0) == '0')
+                    phone_number = "+33" + phone_number.substring(1);
+                contact.setPhoneNumber(phone_number);
                 contact.setFirstname(binding.inputFirstname.getText().toString());
                 contact.setLastname(binding.inputLastname.getText().toString());
                 contact.setEmail(binding.inputEmail.getText().toString());

@@ -41,6 +41,5 @@
     <string name="no_sms_permission">Do not have SMS permission</string>
     <string name="message_empty">message empty</string>
     <string name="no_sms_receive_permission">Do not have the sms receive permission</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

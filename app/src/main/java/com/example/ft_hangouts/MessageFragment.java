@@ -176,7 +176,7 @@ public class MessageFragment extends Fragment
     {
         ArrayList<Message> messages = this.contact.getMessages(getContext());
 
-        binding.recyclerView.setAdapter(new MessageAdapter(messages));
+        binding.recyclerView.setAdapter(new MessageAdapter(messages, this.contact.getPhoneNumber()));
     }
 
     private void setImageToActionBar(Activity activity, Bitmap bitmap)

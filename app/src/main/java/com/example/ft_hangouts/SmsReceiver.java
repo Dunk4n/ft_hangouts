@@ -61,6 +61,8 @@ public class SmsReceiver extends BroadcastReceiver
             MessageAdapter adapter = (MessageAdapter) this.recyclerView.getAdapter();
             if(adapter == null)
                 return;
+            if(!Objects.equals(adapter.getNumber(), sender))
+                return;
             adapter.addMessage(new_message);
             adapter.notifyDataSetChanged();
 
